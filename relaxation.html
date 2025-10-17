@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxation Module</title>
+    <link rel="stylesheet" href="relaxation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="relaxation-wrapper">
+
+        <div class="breathing-container">
+            <div class="circle">
+                <p id="instructions">Get Ready...</p>
+            </div>
+        </div>
+        <button id="start-stop-btn" class="btn">Pause</button>
+
+        <div class="sounds-container glass-card">
+            <h3><i class="fas fa-music"></i> Calming Sounds</h3>
+            <div class="sound-item">
+                <p>Rain</p>
+                <audio src="sounds/rain.mp3" loop></audio> <button class="audio-control"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="sound-item">
+                <p>Forest</p>
+                <audio src="sounds/forest.mp3" loop></audio>
+                <button class="audio-control"><i class="fas fa-play"></i></button>
+            </div>
+        </div>
+
+        <div id="affirmation-container" class="glass-card">
+            <h3><i class="fas fa-quote-left"></i> Positive Affirmation</h3>
+            <p id="affirmation-text">You are capable of amazing things.</p>
+            <button id="new-affirmation-btn" class="btn">New Affirmation</button>
+        </div>
+
+    </div>
+
+    <script src="relaxation.js"></script>
+</body>
+</html>

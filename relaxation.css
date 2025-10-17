@@ -1,0 +1,256 @@
+/* Import a font for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* --- 1. The New Animated Background --- */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+
+    /* The magic starts here: a large gradient that animates */
+    background: linear-gradient(-45deg, #0f172a, #132a4a, #0f172a, #26143c);
+    background-size: 400% 400%;
+    animation: gradient-animation 25s ease infinite;
+}
+
+.relaxation-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* --- 2. "Glassmorphism" UI Card Style --- */
+.glass-card {
+    background: rgba(30, 41, 59, 0.4); /* Semi-transparent background */
+    border-radius: 20px;
+    padding: 25px;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px); /* The frosted glass effect! */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+}
+.glass-card h3 {
+    margin-top: 0;
+    color: #cbd5e1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.glass-card h3 i {
+    margin-right: 12px;
+    color: #93c5fd;
+}
+
+/* --- 3. Enhanced Breathing Animation --- */
+.breathing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    margin-bottom: -15px; /* Nudge button closer */
+}
+
+/* In your relaxation.css file */
+
+.circle {
+    display: flex; /* To center the text inside */
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #7dd3fc, #38bdf8);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    animation: breathe-visual 8s ease-in-out infinite;
+
+    /* --- ADD THESE TWO LINES --- */
+    padding: 10px; /* Gives the text inside some space from the edge */
+    box-sizing: border-box; /* IMPORTANT: Keeps the circle at 100x100px */
+}
+
+/* In your relaxation.css file */
+
+#instructions {
+    /* --- CHANGE FONT-SIZE and ADD TEXT-ALIGN --- */
+    font-size: 1.1rem; /* A little smaller to fit comfortably */
+    text-align: center; /* Ensures it's perfectly centered */
+
+    font-weight: 600;
+    color: #0f172a; /* Dark text for contrast on the light circle */
+    z-index: 10;
+    text-shadow: none;
+}
+
+@keyframes breathe-visual {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    }
+    50% {
+        transform: scale(1.5);
+        box-shadow: 0 0 50px rgba(56, 189, 248, 0.8); /* Enhanced shadow */
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    }
+}
+
+/* Shared button style for a cohesive look */
+.btn {
+    background-color: transparent;
+    border: 2px solid #93c5fd;
+    color: #93c5fd;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: #93c5fd;
+    color: #0f172a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(147, 197, 253, 0.2);
+}
+
+/* --- 4. Custom Audio Player --- */
+.sound-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.sound-item p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+.audio-control {
+    background: rgba(147, 197, 253, 0.2);
+    border: none;
+    color: #e2e8f0;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.audio-control:hover {
+    background: #93c5fd;
+    color: #0f172a;
+}
+audio {
+    display: none; /* Hide the ugly default player */
+}
+
+/* Affirmation text styling */
+#affirmation-text {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.6;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/* === STYLES FOR RELAXATION MODULE (Thematic Dark Theme) === */
+
+.relaxation-page {
+    /* A very deep, dark purple background */
+    background-color: #1a182f; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.breathing-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* Use your brand's light purple as the glowing color */
+    background-color: var(--primary-gradient-start);
+    
+    color: var(--text-dark); /* Dark text on the light circle */
+    font-size: 2em;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    
+    /* A soft, glowing shadow using your brand colors */
+    box-shadow: 0 0 40px 10px rgba(147, 184, 231, 0.4);
+    
+    animation: breathe-dark 4s ease-in-out infinite;
+}
+
+@keyframes breathe-dark {
+    0%, 100% { transform: scale(0.9); box-shadow: 0 0 30px 5px rgba(147, 184, 231, 0.3); }
+    50% { transform: scale(1.05); box-shadow: 0 0 60px 15px rgba(147, 184, 231, 0.5); }
+}
+
+.relaxation-controls .btn {
+    margin-top: 40px;
+    background: transparent;
+    border: 2px solid var(--primary-gradient-start);
+    color: var(--primary-gradient-start);
+}
+.relaxation-controls .btn:hover { background-color: rgba(147, 184, 231, 0.2); }
+
+.sounds-card {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(44, 62, 80, 0.4); /* Semi-transparent dark card */
+    border-radius: 15px;
+    padding: 25px 30px;
+    border: 1px solid rgba(127, 140, 141, 0.3);
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    color: white; /* All text inside will be light */
+}
+:root {
+    --primary-gradient-start: #c2d0fb; /* NEW - Soft Lavender-Blue */
+    --primary-gradient-end: #e1d5fe;   /* NEW - Light Pastel Lilac */
+    --text-dark: #2c3e50;
+    --text-medium: #555;
+    --text-light: #7f8c8d;
+    --background-light: #ecf0f1;
+    --background-card: #ffffff;
+    --border-light: #dfe6e9;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Relief Portal - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Stress Relief Portal Logo">
+            <h1>Stress Relief</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="relaxation.html">Relaxation</a></li>
+                <li><a href="motivation.html">Motivation</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="productivity.html">Productivity</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Find Your Calm, <br> Boost Your Focus</h2>
+            <div class="hero-buttons">
+                <a href="relaxation.html" class="btn btn-primary">Start Relaxing</a>
+                <a href="#features" class="btn btn-secondary">Explore Modules</a>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <a href="relaxation.html" class="feature-card">
+                <div class="icon">😊</div>
+                <h3>Relaxation</h3>
+                <p>(Breathing)</p>
+            </a>
+            <a href="motivation.html" class="feature-card">
+                <div class="icon">❝</div>
+                <h3>Motivation</h3>
+                <p>(Quotes)</p>
+            </a>
+            <a href="music.html" class="feature-card">
+                <div class="icon">🎵</div>
+                <h3>Music & Sounds</h3>
+                <p>(Nature Music)</p>
+            </a>
+            <a href="productivity.html" class="feature-card">
+                <div class="icon">📊</div>
+                <h3>Productivity</h3>
+                <p>(Break, Tips, Timer)</p>
+            </a>
+        </section>
+    </main>
+
+    <div id="chat-bubble">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    <div id="chat-window" class="hidden">
+        <div id="chat-header">
+            <p>Wellness Buddy</p>
+            <button id="close-chat">-</button>
+        </div>
+        <div id="chat-log"></div>
+        <div id="chat-input-container">
+            <input type="text" id="chat-input" placeholder="How are you feeling?">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="resources.html">Resources</a>
+        </div>
+        <p>Your space to find calm and focus.</p>
+        <p>&copy; 2025 Stress Relief Portal</p>
+    </footer>
+
+    <script src="gemini-bot.js"></script>
+
+</body>
+</html>

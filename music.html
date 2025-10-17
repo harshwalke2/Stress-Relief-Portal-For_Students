@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calming Music & Sounds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <style>
+    /* CSS for smooth anchor jumping */
+    main h2.category-heading:target,
+    main section:target {
+        padding-top: 5px; 
+        margin-top: -5px; 
+    }
+
+    /* Scroll padding must be inside the html rule */
+    html {
+        scroll-padding-top: 65px; 
+    }
+
+    /* --- Header Layout Fixes --- */
+
+    /* Targets the main header element to use flexbox */
+    header {
+        display: flex; /* Arranges children (logo and nav) in a row */
+        justify-content: space-between; /* Puts space between the logo block and the navigation */
+        align-items: center; /* Vertically centers items */
+        padding: 10px 50px; /* Reduces vertical padding and adds horizontal padding */
+        width: 100%;
+        border-bottom: 1px solid #e0e0e0; /* Adds a clean separator line */
+    }
+
+    /* Fixes the logo area to arrange the image and text */
+    header .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Adds space between the logo image and the h1 title */
+    }
+
+    /* Styles the image element */
+    header .logo img {
+        height: 40px; /* Sets a consistent size for the logo image */
+        width: auto;
+    }
+
+    /* Styles the navigation list */
+    header nav ul {
+        display: flex;
+        list-style: none; /* Removes bullet points */
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Styles individual navigation links */
+    header nav ul li a {
+        text-decoration: none;
+        color: #4B0082; /* Adjust color to match your purple theme */
+        padding: 0 15px; /* Adds horizontal space between links */
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* --- Main Content White Space Fixes --- */
+
+    /* Targets the main content wrapper, bringing it closer to the header */
+    main .content-wrapper.music-page {
+        padding-top: 20px; /* Significantly reduces the space below the header */
+        max-width: 900px; /* Constrains the width of the main content */
+        margin: 0 auto; /* Centers the main content area */
+    }
+
+    /* Reduces unnecessary space above the main heading */
+    main h1 {
+        margin-top: 0;
+        margin-bottom: 5px; 
+    }
+
+    /* Reduces space above the descriptive paragraph */
+    main p {
+        margin-top: 5px;
+        margin-bottom: 10px; /* Smaller gap below the description */
+    }
+
+    /* Reduces space around the Music Categories heading */
+    main h2.category-heading {
+        margin-top: 10px; 
+        margin-bottom: 10px; 
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Stress Relief Portal Logo"> 
+            <h1>Stress Relief</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="relaxation.html">Relaxation</a></li>
+                <li><a href="motivation.html">Motivation</a></li>
+                <li><a href="music.html">Music</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-wrapper music-page">
+            <h1>Music & Sounds</h1>
+            <p>Press play, close your eyes, and let these sounds transport you to a calmer place. Use headphones for the best experience.</p>
+            
+            <h2 class="category-heading">Music Categories</h2>
+            
+            <div class="category-grid">
+                
+                <a href="#flute-audios" class="category-card">
+                    <i class="fas fa-wind"></i>
+                    <span>Flute Music</span>
+                </a>
+
+                <a href="#relaxation-audios" class="category-card">
+                    <i class="fas fa-music"></i>
+                    <span>Relaxing Music</span>
+                </a>
+                
+                <a href="#ocean-sounds-section" class="category-card">
+                    <i class="fas fa-water"></i>
+                    <span>Ocean Sounds</span>
+                </a>
+                
+                <a href="#nature-sounds-section" class="category-card">
+                    <i class="fas fa-tree"></i>
+                    <span>Nature Sounds</span>
+                </a>
+            </div>
+            
+            ---
+            
+                        <section id="flute-audios" style="padding-top: 50px; text-align: center; margin-bottom: 80px;">
+                <h2 style="color: #4B0082; margin-bottom: 30px;">🎧 Flute Audio Collection 🎶</h2>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Divine Krishna Bansuri Flute</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/krishna-flute.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Calm Western Flute & Orchestra</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/western-flute.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Native American Flute: Spirit of Stillness</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/native-flute.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Zen Meditation (Shakuhachi Flute)</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/shakuhachi-flute.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Ambient Flute with Rain Sounds</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/flute-rain.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </section>
+            
+                        <section id="relaxation-audios" style="padding-top: 50px; text-align: center; margin-bottom: 80px;">
+                <h2 style="color: #4B0082; margin-bottom: 30px;">🎧 Relaxation Music Collection 🎶</h2>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Calm Piano for Deep Focus</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/calm-piano.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Soothing Ocean Waves</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/ocean-waves.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+    
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Ambient Forest with Birds</h3>
+                   <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/ambient-forest.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Soft Acoustic Guitar Meditation</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/soft-guitar.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+    
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Zen Tibetan Singing Bowls</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/singing-bowls.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </section>
+
+            
+                        <section id="ocean-sounds-section" style="padding-top: 50px; text-align: center; margin-bottom: 80px;">
+                <h2 style="color: #4B0082; margin-bottom: 30px;">🌊 Ocean Sounds Collection 🐚</h2>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Soothing Ocean Waves (Classic)</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/ocean-waves.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Distant Foghorn and Rolling Sea</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/foghorn-sea.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Deep Sea Diving (Ambient Bubbles)</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/deep-sea-bubbles.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Calm Beach with Gentle Lapping Water</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/calm-lapping-water.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Tropical Shoreline with Seagulls</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/tropical-seagulls.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </section>
+            
+                        <section id="nature-sounds-section" style="padding-top: 50px; text-align: center; margin-bottom: 80px;">
+                <h2 style="color: #4B0082; margin-bottom: 30px;">🌳 Nature Sounds Collection 🐦</h2>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Ambient Forest with Birds (Classic)</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/ambient-forest.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Heavy Rain and Thunderstorm</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/rain-thunder.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Mountain Stream and Water Flow</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/mountain-stream.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Crackling Campfire Sounds</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/campfire-crackling.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-player-block" style="max-width: 600px; margin: 0 auto 30px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                    <h3>Desert Wind and Soft Chimes</h3>
+                    <audio controls class="single-audio" style="width: 100%;">
+                        <source src="audio/desert-wind.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="resources.html">Resources</a>
+        </div>
+        <p>&copy; 2025 Stress Relief Portal</p>
+    </footer>
+
+        <script>
+        // Get all audio elements on the page that have the class 'single-audio'
+        const allAudioPlayers = document.querySelectorAll('.single-audio');
+
+        // Add an event listener to each audio player
+        allAudioPlayers.forEach(audio => {
+            audio.addEventListener('play', function() {
+                // When an audio element starts playing:
+                allAudioPlayers.forEach(otherAudio => {
+                    // Check if the current audio element is NOT the one that just started playing
+                    if (otherAudio !== this) {
+                        // If it's another one, pause it
+                        otherAudio.pause();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
