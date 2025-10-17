@@ -1,7 +1,8 @@
+require('dotenv').config();
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- PASTE YOUR API KEY HERE ---
-    const GEMINI_API_KEY = 'AIzaSyBNXEv3tT7ST35ccxezhGfYlN7DLBJjaKI';
+    const GEMINI_API_KEY = process.env.GOOGLE_API_KEY;
 
     // Get all the HTML elements we need
     const chatBubble = document.getElementById('chat-bubble');
